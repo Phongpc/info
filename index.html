@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/font/fontawesome-free-5.15.4-web/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/gird.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <link rel="icon" href="./assets/img/Logo.png" type="image/x-icon" sizes="192x192">
+    <title>Nguyễn Duy Phong</title>
+</head>
+<script type='text/javascript'>
+    //<![CDATA[
+    //Ctrl+U
+    shortcut={all_shortcuts:{},add:function(a,b,c){var d={type:"keydown",propagate:!1,disable_in_input:!1,target:document,keycode:!1};if(c)for(var e in d)"undefined"==typeof c[e]&&(c[e]=d[e]);else c=d;d=c.target,"string"==typeof c.target&&(d=document.getElementById(c.target)),a=a.toLowerCase(),e=function(d){d=d||window.event;if(c.disable_in_input){var e;d.target?e=d.target:d.srcElement&&(e=d.srcElement),3==e.nodeType&&(e=e.parentNode);if("INPUT"==e.tagName||"TEXTAREA"==e.tagName)return}d.keyCode?code=d.keyCode:d.which&&(code=d.which),e=String.fromCharCode(code).toLowerCase(),188==code&&(e=","),190==code&&(e=".");var f=a.split("+"),g=0,h={"`":"~",1:"!",2:"@",3:"#",4:"$",5:"%",6:"^",7:"&",8:"*",9:"(",0:")","-":"_","=":"+",";":":","'":'"',",":"<",".":">","/":"?","\\":"|"},i={esc:27,escape:27,tab:9,space:32,"return":13,enter:13,backspace:8,scrolllock:145,scroll_lock:145,scroll:145,capslock:20,caps_lock:20,caps:20,numlock:144,num_lock:144,num:144,pause:19,"break":19,insert:45,home:36,"delete":46,end:35,pageup:33,page_up:33,pu:33,pagedown:34,page_down:34,pd:34,left:37,up:38,right:39,down:40,f1:112,f2:113,f3:114,f4:115,f5:116,f6:117,f7:118,f8:119,f9:120,f10:121,f11:122,f12:123},j=!1,l=!1,m=!1,n=!1,o=!1,p=!1,q=!1,r=!1;d.ctrlKey&&(n=!0),d.shiftKey&&(l=!0),d.altKey&&(p=!0),d.metaKey&&(r=!0);for(var s=0;k=f[s],s<f.length;s++)"ctrl"==k||"control"==k?(g++,m=!0):"shift"==k?(g++,j=!0):"alt"==k?(g++,o=!0):"meta"==k?(g++,q=!0):1<k.length?i[k]==code&&g++:c.keycode?c.keycode==code&&g++:e==k?g++:h[e]&&d.shiftKey&&(e=h[e],e==k&&g++);if(g==f.length&&n==m&&l==j&&p==o&&r==q&&(b(d),!c.propagate))return d.cancelBubble=!0,d.returnValue=!1,d.stopPropagation&&(d.stopPropagation(),d.preventDefault()),!1},this.all_shortcuts[a]={callback:e,target:d,event:c.type},d.addEventListener?d.addEventListener(c.type,e,!1):d.attachEvent?d.attachEvent("on"+c.type,e):d["on"+c.type]=e},remove:function(a){var a=a.toLowerCase(),b=this.all_shortcuts[a];delete this.all_shortcuts[a];if(b){var a=b.event,c=b.target,b=b.callback;c.detachEvent?c.detachEvent("on"+a,b):c.removeEventListener?c.removeEventListener(a,b,!1):c["on"+a]=!1}}},shortcut.add("Ctrl+U",function(){top.location.href="/"});
+    //]]>
+    </script>
+<body oncontextmenu=”return false” ondragstart=”return false” onselectstart=”return false”>
+    <div class="main">
+        <div class="grid wide wide-low">
+            <div class="row">
+                <div class="col l-12 m-12">
+                    <!-- Giới thiệu -->
+                    <div class="intro">
+                        <!-- Phần avata và tên -->
+                        <div class="intro-user">
+                            <div class="intro-user-left">
+                                <img src="./assets/img/avatar.jpg" alt="Ảnh của Phong" class="intro-user-avt">
+                            </div>
+                            <div class="intro-user-right">
+                                <h1 class= "intro-user-right__name">Nguyễn Duy Phong</h1>
+                                <div class="intro-user-right__job">
+                                    Developer
+                                </div>
+                                <ul class="intro-user-right__social">
+                                    <li class="intro-user-right__social-icon facebook">
+                                        <div class="tooltip">Facebook</div>
+                                        <a href="https://www.facebook.com/phongphongphoong/">
+                                            <span id="tooltip-icon" class="facebook">
+                                                <i class="fab fa-facebook-f" id="tooltip-icon--icon"></i>
+                                            </span>
+                                        </a>
+                                    </li>
+                                   
+                                    <li class="intro-user-right__social-icon instagram">
+                                        <div class="tooltip">Instagram</div>
+                                        <a href="https://www.instagram.com/phong_phong_phoong/">
+                                            <span id="tooltip-icon" class="instagram">
+                                                <i class="fab fa-instagram" id="tooltip-icon--icon"></i>
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li class="intro-user-right__social-icon github">
+                                        <div class="tooltip">GitHub</div>
+                                        <a href="https://github.com/Phongpc">
+                                            <span id="tooltip-icon" class="github">
+                                                <i class="fab fa-github" id="tooltip-icon--icon"></i>
+                                            </span>
+                                        </a>
+                                    </li>
+                                </ul>
+
+                            </div>
+                        </div>
+            
+                        <!-- Phần liên hệ .. -->
+
+                        <div class="intro-contact">
+                            <ul class="intro-contact-list">
+                                <li class="intro-contact-list__item">
+                                    <span class="overhead">
+                                        Email
+                                    </span>
+                                    ndphong12102003@gmail.com
+                                </li>
+                                <li class="intro-contact-list__item">
+                                    <span class="overhead">
+                                        Số Điện Thoại
+                                    </span>
+                                    0862347100
+                                </li>
+                            </ul>
+                            <ul class="intro-contact-list">
+                                <li class="intro-contact-list__item">
+                                    <span class="overhead">
+                                        Ngày Sinh
+                                    </span>
+                                    12/10/2003
+                                </li>
+                                <li class="intro-contact-list__item">
+                                    <span class="overhead">
+                                        Địa Chỉ
+                                    </span>
+                                    Hà Nội
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="row container">
+                <!-- Thanh công cụ -->
+              <div class="col l-2 c-12">
+                <div class="options">
+                    <ul class="option ">
+                        <li class="option-item active">
+                            <div class="option-item-icon">
+                                <script src="https://cdn.lordicon.com/libs/mssddfmo/lord-icon-2.1.0.js"></script>
+                                <lord-icon
+                                    src="https://cdn.lordicon.com/eszyyflr.json"
+                                    trigger="morph"
+                                    colors="primary:#263da3,secondary:#4e2099"
+                                    style="width:65px;height:65px;">
+                                </lord-icon>
+                                Bản Thân
+                            </div>
+                            
+                        </li>
+                        <li class="option-item">
+                            <div class="option-item-icon">
+                                <script src="https://cdn.lordicon.com/libs/mssddfmo/lord-icon-2.1.0.js"></script>
+                                <lord-icon
+                                    src="https://cdn.lordicon.com/wxnxiano.json"
+                                    trigger="morph"
+                                    colors="primary:#263da3,secondary:#4e2099"
+                                    style="width:65px;height:65px">
+                                </lord-icon>                           
+                                Học Vấn
+                            </div>
+                        </li>
+                        <li class="option-item ">
+                            <div class="option-item-icon">
+                                <script src="https://cdn.lordicon.com/libs/mssddfmo/lord-icon-2.1.0.js"></script>
+                                <lord-icon
+                                    src="https://cdn.lordicon.com/iltqorsz.json"
+                                    trigger="morph"
+                                    colors="primary:#263da3,secondary:#4e2099"
+                                    style="width:65px;height:65px;">
+                                </lord-icon>                           
+                                Mục Tiêu
+                            </div>
+                        </li>
+                        <li class="option-item ">
+                            <div class="option-item-icon">
+                                <script src="https://cdn.lordicon.com/libs/mssddfmo/lord-icon-2.1.0.js"></script>
+                                <lord-icon
+                                    src="https://cdn.lordicon.com/rjzlnunf.json"
+                                    trigger="morph"
+                                    colors="primary:#263da3,secondary:#4e2099"
+                                    style="width:65px;height:65px">
+                                </lord-icon>
+                                Sở Thích
+                            </div>
+                        </li>
+                       
+                    </ul>
+                  </div>
+              </div>
+              <!-- Mục mở rộng tương ứng -->
+              <div class="col l-10">
+                  <div class="extends">
+                      <!-- Bản thân -->
+                    <ul class="extend active">
+                        <li class="extend-item">
+                            <div class="extend-item--title-header">
+                                <h1 class="extend-item--title-h1">Giới thiệu</h1>
+                            </div>
+                            <p class="extend-item-para">
+                                Mình là sinh viên trường đại học Tài nguyên và Môi trường Hà Nội. Chuyên ngành chính của mình là Công Nghệ Thông Tin.        
+                            </p>
+                            <p class="extend-item-para">
+                                Hiện tại mình đang theo học tại Viện Công Nghệ Thông Tin T3H và DL DEVS Team. 
+                            </p>
+                        </li>
+                        <li class="extend-item">
+                            <div class="extend-item--title-body">
+                                <h3 class="extend-item--h3">Mình đã làm được</h3>
+                            </div>
+                            <div class="row">
+                                <div class="col l-6 m-6">
+                                    <a href="https://phongpc.github.io/phonghai/"class="case">
+                                        <div id="zoom">
+                                            <div class= "case-item">
+                                                <img src="./assets/img/Viecdalam/band.png" alt="" class="case-item--img">
+                                            </div>
+                                            <h3 class="case-item--h3">Happy BirthDay</h3>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col l-6 m-6">
+                                    <a href="https://phongpc.github.io/tan_gai/"class="case">
+                                        <div id="zoom">
+                                            <div class= "case-item">
+                                                <img src="./assets/img/Viecdalam/shopee.png" alt="" class="case-item--img">
+                                            </div>
+                                            <h3 class="case-item--h3">Tỏ Tình</h3>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col l-6 m-6">
+                                    <a href="https://phongpc.github.io/Music/"class="case">
+                                        <div id="zoom">
+                                            <div class= "case-item">
+                                                <img src="./assets/img/Viecdalam/music.png" alt="" class="case-item--img">
+                                            </div>
+                                            <h3 class="case-item--h3">Play Music</h3>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col l-6 m-6">
+                                    <a href="https://phongpc.github.io/WomenDay/"class="case">
+                                        <div id="zoom">
+                                            <div class= "case-item">
+                                                <img src="./assets/img/Viecdalam/form.png" alt="" class="case-item--img">
+                                            </div>
+                                            <h3 class="case-item--h3">Women Day</h3>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="extend-item">
+                            <div class="extend-item--title-body">
+                                <h3 class="extend-item--h3">Những câu nói cho mình cảm hứng</h3>
+                            </div>
+                            <div class="slide">
+                                <!-- Từng câu nói -->
+                                <div class="slide-users active fade">
+                                    <div class="slide-avatar">
+                                        <img src="./assets/img/caunoi/elon-musk.jpg" alt="" class="slide-avatar--img">
+                                    </div>
+                                    <div class="slide-text fade">
+                                        <h4 class="slide-text--title">Elon Musk</h4>
+                                        <p class="slide-text--para">
+                                            "Công nghệ là thứ gần gũi nhất với ma thuật còn tồn tại trên thế giới này"
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="slide-users fade">
+                                    <div class="slide-avatar">
+                                        <img src="./assets/img/caunoi/Satya.jpg" alt="" class="slide-avatar--img">
+                                    </div>
+                                    <div class="slide-text">
+                                        <h4 class="slide-text--title">Satya Nadella</h4>
+                                        <p class="slide-text--para">
+                                            "Ngành công nghiệp của chúng ta không tôn trọng truyền thống - nó chỉ tôn trọng sự đổi mới"
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="slide-users fade">
+                                    <div class="slide-avatar">
+                                        <img src="./assets/img/caunoi/reed.jpg" alt="" class="slide-avatar--img">
+                                    </div>
+                                    <div class="slide-text">
+                                        <h4 class="slide-text--title">Reed Hastings</h4>
+                                        <p class="slide-text--para">
+                                            "Thời đại đồ đá. Thời đại đồ đông. Thời đại đồ sắt. Chúng ta xác định toàn bộ sử thi của nhân loại bằng công nghệ mà họ sử dụng"
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="slide-users fade">
+                                    <div class="slide-avatar">
+                                        <img src="./assets/img/caunoi/mark.jpg" alt="" class="slide-avatar--img">
+                                    </div>
+                                    <div class="slide-text">
+                                        <h4 class="slide-text--title">Mark Zuckerberg</h4>
+                                        <p class="slide-text--para">
+                                            "Rủi ro lớn nhất là khi bạn không chấp nhận bất kỳ rủi ro nào. Trong một thế giới thay đổi thực sự nhanh chóng, chiến lược duy nhất được đảm bảo thất bại là không chấp nhận rủi ro."
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="slide-users fade">
+                                    <div class="slide-avatar">
+                                        <img src="./assets/img/caunoi/timcook.jpg" alt="" class="slide-avatar--img">
+                                    </div>
+                                    <div class="slide-text">
+                                        <h4 class="slide-text--title">Tim Cook</h4>
+                                        <p class="slide-text--para">
+                                            "Công việc mang ý nghĩa mới khi bạn cảm thấy đang đi đúng hướng. Nếu không, nó chỉ là một công việc và cuộc sống dường như quá ngắn ngủi cho điều đó."
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="slide-users fade">
+                                    <div class="slide-avatar">
+                                        <img src="./assets/img/caunoi/michael.jpg" alt="" class="slide-avatar--img">
+                                    </div>
+                                    <div class="slide-text">
+                                        <h4 class="slide-text--title">Michael Dell</h4>
+                                        <p class="slide-text--para">
+                                            "Bạn không cần phải là một thiên tài, hay một người có tầm nhìn, hay thậm chí tốt nghiệp đại học để thành công. Bạn chỉ cần có nền tảng và ước mơ."
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="slide-users fade">
+                                    <div class="slide-avatar">
+                                        <img src="./assets/img/caunoi/biil.jpg" alt="" class="slide-avatar--img">
+                                    </div>
+                                    <div class="slide-text">
+                                        <h4 class="slide-text--title">Elon Musk</h4>
+                                        <p class="slide-text--para">
+                                            "Giá trị của sự cần mẫn nằm ở chỗ nó tích tụ mầm mống cho những điều may mắn. Càng chăm chỉ bao  nhiêu, tôi càng được may mắn bấy nhiêu."
+                                        </p>
+                                    </div>
+                                </div>
+                                <a class="prev"><i class="fas fa-chevron-left"></i></a>
+                                <a class="next"><i class="fas fa-chevron-right"></i></a>
+                            </div>
+
+                            <!-- Nút slide -->
+                            <div class="tab">
+                                <span class="tab-item active fade "></span>
+                                <span class="tab-item fade "></span>
+                                <span class="tab-item fade"></span>
+                                <span class="tab-item fade"></span>    
+                                <span class="tab-item fade"></span>    
+                                <span class="tab-item fade"></span>    
+                                <span class="tab-item fade"></span>    
+                            </div>
+                        </li>
+                    </ul>
+                    <!-- Học vấn -->
+                    <ul class="extend">
+                        <div class="extend-item--title-header">
+                            <h1 class="extend-item--title-h1">Học vấn</h1>
+                        </div>
+
+                        <li class="extend-item">
+                            <div class="extend-item-text-title">
+                                <h2 class="extend-item-text-title--h2">
+                                    <img src="./assets/img/Svg/icon-education.svg" alt="" class="extend-item-text-title--img">
+                                    Giáo dục 
+                                </h2>
+
+                                <div class="extend-item--bodys">
+                                    <div class="extend-item--body active-line">
+                                        <h4 class="extend-item-text-title--h4">
+                                            Trường Đại Học Tài nguyên và Môi trường Hà Nội
+                                        </h4>
+                                        <p class="extend-item-para-title">
+                                           2021 - nay 
+                                        </p>
+                                        <p class="extend-item-para-text">
+                                            Từ 2021 đến nay mình đã theo đuổi con đường trở thành Developer.
+                                        </p>
+                                    </div>
+                                    <div class="extend-item--body">
+                                        <h4 class="extend-item-text-title--h4">
+                                            DL DEVS Team
+                                        </h4>
+                                        <p class="extend-item-para-title">
+                                            2021 - nay 
+                                         </p>
+                                         <p class="extend-item-para-text">
+                                            Được biết đến trang Web dạy học của DL DEVS Team thật sự rất là tuyệt vời mình học được những kĩ năng kiến thức căn bản đến nâng cao để trở thành một Developer, ở trong đây có  một người giáo viên dạy rất tận tâm, rất là dễ hiểu.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li> 
+                        
+                        <li class="extend-item">
+                            <div class="extend-item-text-title">
+                                <h2 class="extend-item-text-title--h2">
+                                    <img src="./assets/img/Svg/bag.svg" alt="" class="extend-item-text-title--img">
+                                    Kinh nghiệm
+                                </h2>
+
+                                <div class="extend-item--bodys">
+                                    <div class="extend-item--body active-line">
+                                        <h4 class="extend-item-text-title--h4">
+                                            Bán gói mè 
+                                        </h4>
+                                        <p class="extend-item-para-title">
+                                           2021 - nay 
+                                        </p>
+                                        <p class="extend-item-para-text">
+                                            Từ 2021 đến nay em là CEO của bên bán mè bán được 1 tỷ gói mè rồi ... 
+                                        </p>
+                                    </div>
+                                    <div class="extend-item--body active-line">
+                                        <h4 class="extend-item-text-title--h4">
+                                            Đặc vụ rửa bát thuê
+                                        </h4>
+                                        <p class="extend-item-para-title">
+                                            2021 - nay  
+                                         </p>
+                                         <p class="extend-item-para-text">
+                                            Được biết đến với cái tên rửa bát thuê nổi danh ở Hà Nội em chuyên nhận rửa bát các tiệm đồ ăn lớn ở Hà Nội,
+                                            em còn nhận chạy tiệc, kiêm rửa nấu đồ ăn.
+                                        </p>
+                                    </div>
+                                    <div class="extend-item--body">
+                                        <h4 class="extend-item-text-title--h4">
+                                            Học IT
+                                        </h4>
+                                        <p class="extend-item-para-title">
+                                            2021 - nay  
+                                         </p>
+                                         <p class="extend-item-para-text">
+                                            Em đã nắm được các kiến thức nền tảng của HTML, CSS, Javascrpit và C++.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="extend-item ">
+                            <div class="extend-item-text-title">
+                                <h2 class="extend-item-text-title--h2">
+                                    Kỹ năng của tôi
+                                </h2>
+                                <div class="skills-section">
+                                    <div class="container-skills">
+                                        <div class="container-skills-progress">
+                                            <div class="container-skills-progress-bar" data-progress="30">
+                                                <p>HTML </p>
+                                                <span>30%</span>
+                                            </div>
+                                        </div>
+
+                                        <div class="container-skills-progress">
+                                            <div class="container-skills-progress-bar" data-progress="25">
+                                                <p>Javascript </p>
+                                                <span>  25%</span>
+                                            </div>
+                                        </div>
+
+                                        <div class="container-skills-progress">
+                                            <div class="container-skills-progress-bar" data-progress="50">
+                                                <p>C++</p>
+                                                <span> 50%</span>
+                                            </div>
+                                        </div>
+
+                                        <div class="container-skills-progress">
+                                            <div class="container-skills-progress-bar" data-progress="25">
+                                                <p>CSS</p>
+                                                <span> 25%</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+
+                    </ul>
+                    <!-- Mục tiêu -->
+                    <ul class="extend">
+                        <div class="extend-item--title-header">
+                            <h1 class="extend-item--title-h1">Mục tiêu</h1>
+                        </div>
+                        <!-- Ngắn hạn -->
+                        <li class="extend-item">
+                            <div class="extend-item-text-title">
+                                <div class="extend-item--title-body">
+                                    <h3 class="extend-item--h3">Ngắn hạn</h3>
+                                </div>
+
+                                <div class="extend-item--bodys">
+                                    <div class="extend-item--body active-line">
+                                        <h4 class="extend-item-text-title--h4">
+                                            Học và rèn luyện HTMl, CSS
+                                        </h4>
+                                        <p class="extend-item-para-title">
+                                           01/04/2022
+                                        </p>
+                                        <p class="extend-item-para-text">
+                                            Là một ngôn ngữ đánh dấu siêu văn bản nên HTML sẽ có vai trò xây dựng cấu trúc siêu văn bản trên một website, hoặc khai báo các tập tin kỹ thuật số như hình ảnh, video, nhạc. Học lập trình web với HTML sẽ định hướng cho mình muốn theo đuổi lập trình web. CSS tạo phong cách và định kiểu cho các yếu tố được viết dưới dạng ngôn ngữ đánh dấu HTML. Nó giúp người dùng tiết kiệm thời gian và công sức viết web nhờ khả năng điều khiển định dạng của nhiều trang web cùng lúc.
+                                        </p>
+                                    </div>
+                                    <div class="extend-item--body active-line">
+                                        <h4 class="extend-item-text-title--h4">
+                                            Học thêm nhiều ngôn ngữ Lập Trình và  Tiếng Anh
+                                        </h4>
+                                        <p class="extend-item-para-title">
+                                            .../.../...
+                                         </p>
+                                         
+                                    </div>
+                                    <div class="extend-item--body active-line">
+                                        <h4 class="extend-item-text-title--h4">
+                                            Viết được một giao diện Web
+                                        </h4>
+                                        <p class="extend-item-para-title">
+                                            Sau khi đã nắm được HTML và CSS 
+                                         </p>
+                                         <p class="extend-item-para-text">
+                                            Kết hợp giữa HTML và CSS đã học được mình thực hành và viết lại một số trang web. Từ đó rút ra các thiếu sót và bổ sung.
+                                        </p>
+                                    </div>
+                                    <div class="extend-item--body active-line">
+                                        <h4 class="extend-item-text-title--h4">
+                                            Học và rèn luyện Javascript
+                                        </h4>
+                                        <p class="extend-item-para-title">
+                                            Khi đã học được HTML và CSS 
+                                         </p>
+                                         <p class="extend-item-para-text">
+                                            JavaScript là ngôn ngữ lập trình phổ biến nhất, Javascript có lương viện đảm bảo và có cơ hội việc làm nhiều hơn nên mình chọn Javascript để học .
+                                        </p>
+                                    </div>
+                                    <div class="extend-item--body active-line">
+                                        <h4 class="extend-item-text-title--h4">
+                                            Viết một Web dùng HTML, CSS và Javascript
+                                        </h4>
+                                        <p class="extend-item-para-title">
+                                            30/04/2022 
+                                         </p>
+                                         <p class="extend-item-para-text">
+                                            Kết hợp giữa HTML, CSS và Javascrpit đã học được mình thực hành và viết ra trang web này. Từ đó rút ra các thiếu sót và bổ sung.
+                                        </p>
+                                    </div>
+                                    <div class="extend-item--body ">
+                                        <h4 class="extend-item-text-title--h4">
+                                            Học và rèn luyện 
+                                        </h4>
+                                        <p class="extend-item-para-title">
+                                            Sau này 
+                                         </p>
+                                         <p class="extend-item-para-text">
+                                        </p>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </li>
+                        <!-- Dài hạn -->
+                        <li class="extend-item">
+                            <div class="extend-item-text-title">
+                                <div class="extend-item--title-body">
+                                    <h3 class="extend-item--h3">Khi ổn định kiến thức</h3>
+                                </div>
+
+                                <div class="extend-item--bodys">
+                                    <div class="extend-item--body active-line">
+                                        <h4 class="extend-item-text-title--h4">
+                                            Đi xin thực tập
+                                        </h4>
+                                        <p class="extend-item-para-title">
+                                           .../08/2022
+                                        </p>
+                                        <p class="extend-item-para-text">
+                                            Thực tập là một cơ hội để mình học hỏi, áp dụng những lý thuyết được học vào thực tế và làm quen với môi trường làm việc quy củ và có được thành công cao hơn khi đi làm thực sự.
+                                    </div>
+                                    <div class="extend-item--body">
+                                        <h4 class="extend-item-text-title--h4">
+                                            Thực tập xong
+                                        </h4>
+                                        <p class="extend-item-para-title">
+                                            .../.../2023
+                                         </p>
+                                         <p class="extend-item-para-text">
+                                            Tập trung bổ sung các vấn đề còn thiếu sót mình nhận ra được sau khi thực tập, nếu ổn định sẽ xin ở lại thử việc.
+                                        </p>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </li>
+
+                    </ul>
+                    <!-- Sở thích -->
+                    <ul class="extend">
+                        <div class="extend-item--title-header">
+                            <h1 class="extend-item--title-h1">Sở thích</h1>
+                        </div>
+                        <li class="extend-item">
+                            <div class="extend-item-text-title">
+                                <div class="extend-item-text-title--contain">
+                                    <h2 class="extend-item-text-title--h2">
+                                        <img src="./assets/img/Svg/game.png" alt="">
+                                        Chơi game
+                                    </h2>
+                                    <div class="ententain" onclick="javascript:window.location.href='https://lienminh.garena.vn/' ">
+                                        <div class="ententain-avatar">
+                                            <a href="https://lienminh.garena.vn/">
+                                                <img src="./assets/img/lol.jpg" alt="" class="ententain-avatar--avt">
+                                            </a>
+                                        </div>
+                                        <div class="ententain-text">
+                                            <a href="https://lienminh.garena.vn/">
+                                                <h3 class="ententain-text--h3">
+                                                    Liên Minh Huyền Thoại
+                                                </h3>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            
+                        </li> 
+                    </ul>
+                
+
+                  </div>
+            </div>
+            </div>
+            
+    
+        </div>
+    </div>
+
+
+    <div class="circle1"></div>
+    <div class="circle2 hide-on-tablet hide-on-mobile"></div>
+    <div class="circle3 hide-on-low-pc"></div>
+    
+
+    <script src="./app.js"></script>
+    <script src="./music.js"></script>
+</body>
+</html>
